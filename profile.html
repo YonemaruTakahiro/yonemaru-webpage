@@ -1,59 +1,97 @@
-@charset "utf-8";
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>takahiro yonemaru's page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+
+<h1 id="logo"><img src="images/logo1.png" alt="Takahiro Yonemaru"></h1>
+
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+<!--/#menubar_hdr-->
+
+<div id="header-icon">
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+</div>
+<!--/#header-icon-->
+
+</header>
+
+<main>
+
+<section>
+
+<h2>PROFILE</h2>
+
+<table class="ta1">
+<tr>
+<th>氏名</th>
+<td>米丸 嵩宏 (Takahiro Yonemaru)</td>
+</tr>
+<tr>
+<th>出身</th>
+<td>鹿児島県</td>
+</tr>
+<tr>
+<th>趣味</th>
+<td>漫画</td>
+</tr>
+<tr>
+<th>研究内容</th>
+<td>未定</td>
+</tr>
+</table>
+
+</section>
+
+</main>
+
+<div id="menubar">
+
+<!--メインメニュー-->
+<nav>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li class="current"><a href="profile.html">PROFILE</a></li>
+<li><a href="research.html">RESEARCH</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+</ul>
+</nav>
 
 
+</div>
+<!--/#menubar-->
 
-/*スライドショーのキーフレーム設定
----------------------------------------------------------------------------*/
-@keyframes slide1 {
-	0% {opacity: 1;}
-	25%{opacity: 1;}
-	35%{opacity: 0;}
-	90% {opacity: 0;}
-	100% {opacity: 1;}
-}
-@keyframes slide2 {
-	0% {opacity: 0;}
-	25% {opacity: 0;}
-	35% {opacity: 1;}
-	60% {opacity: 1;}
-	70% {opacity: 0;}
-	100% {opacity: 0;}
-}
-@keyframes slide3 {
-	0% {opacity: 0;}
-	60% {opacity: 0;}
-	70% {opacity: 1;}
-	90% {opacity: 1;}
-	100% {opacity: 0;}
-}
+<footer>
+<small>Copyright&copy; <a href="index.html">Takahiro Yonemaru's page</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
 
+</div>
+<!--/#container-->
 
-/*スライドショーの設定
----------------------------------------------------------------------------*/
-/*スライドショーのブロック全体*/
-.mainimg {
-	position: relative;
-	margin-bottom: 30px;
-}
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-.slide1,.slide2,.slide3 {
-	width: 100%;height: auto;
-	animation-duration: 12s;	/*実行する時間。「s」は秒の事。*/
-	animation-iteration-count:infinite;		/*実行する回数。「infinite」は無限に繰り返す意味。*/
-	position: absolute;left:0px;top:0px;
-	animation-fill-mode: both;
-	animation-delay: 1s;
-}
-/*１枚目*/
-.slide1 {
-	position: relative;
-	animation-name: slide1;	/*上で設定しているキーフレーム（keyframes）の名前*/
-}
-/*２枚目*/
-.slide2 {
-	animation-name: slide2;	/*上で設定しているキーフレーム（keyframes）の名前*/
-}
-/*３枚目*/
-.slide3 {
-	animation-name: slide3;	/*上で設定しているキーフレーム（keyframes）の名前*/
-}
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+</body>
+</html>
