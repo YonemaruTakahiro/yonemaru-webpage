@@ -1,0 +1,11 @@
+{
+    "default": "ja",
+    "languages": {
+        "ja": {
+            "flag": "https://flagcdn.com/w20/jp.png"
+        },
+        "en": {
+            "flag": "https://flagcdn.com/w20/us.png"
+        }
+    }
+}

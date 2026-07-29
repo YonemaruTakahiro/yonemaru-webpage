@@ -4,7 +4,14 @@
 
 ## Credits / License
 
-This site is built with the [Academic Pages](https://github.com/academicpages/academicpages.github.io) template, which is a fork of the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) by Michael Rose.
+This site is built with the [Academic Portfolio](https://github.com/NicolasMeseguer/nicolasmeseguer.github.io) template by Nicolás Meseguer, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) — see [LICENSE-CC-BY-SA-4.0](LICENSE-CC-BY-SA-4.0). This site (a derivative of the template) is likewise available under CC BY-SA 4.0.
 
-The template is released under the MIT License — see [LICENSE](LICENSE) (Copyright (c) 2016 Michael Rose).
-Site content (text and images under `_pages/`, `_posts/`, `_publications/`, etc.) © Takahiro Yonemaru.
+## ローカルでのプレビュー
+
+Jekyll等は不要です。リポジトリ直下で簡易HTTPサーバーを立てて開きます:
+
+```
+python -m http.server 8000
+```
+
+→ http://localhost:8000/ をブラウザ(またはVSCodeのSimple Browser)で開く。
