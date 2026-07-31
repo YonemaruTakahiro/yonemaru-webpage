@@ -12,10 +12,6 @@ $(document).ready(function(){
 	$('#particularContent').hide();
 	// $('#photosContent').hide();
 
-	// Options menu is hidden by default
-	$('#theme').hide();
-	$('#lan').hide();
-
 	// Handle 'About Me' content
 	$('#aboutme').click(function(e) {
 
@@ -257,20 +253,6 @@ $(document).ready(function(){
 		});
 		$('#theme').empty().append("<i class='fa-duotone fa-lightbulb-slash'></i>");
 	}
-
-	// Controls the option menu toggler to show/hide the language and theme selectors
-	$('#options-toggler').click(function(e) {
-		if(!$(e.currentTarget).hasClass('active')) {
-			$(e.currentTarget).addClass('active');
-			$('#theme').show("fast");
-			$('#lan').show("fast");
-		}
-		else {
-			$(e.currentTarget).removeClass('active');
-			$('#theme').hide("fast");
-			$('#lan').hide("fast");
-		}
-	})
 
 	// Alternates between light and dark themes
 	$('#theme').click(function(e) {

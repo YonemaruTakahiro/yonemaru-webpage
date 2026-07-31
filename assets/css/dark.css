@@ -49,15 +49,17 @@ h1, h2, h3, h4, b {
 	border: 1px solid #fff;
 }
 
-#options-toggler {
-	box-shadow: 0px 3px 50px rgba(0,0,0,0.2);
+/* In dark mode, the theme button is white (shows what you switch to) */
+#theme {
+	background-color: #fff;
+	color: #1c1e20;
 }
 
-#options-toggler:hover {
-	box-shadow: 0px 3px 50px rgba(0,0,0,0.3);
+#theme:hover {
+	background-color: #d3d3d3;
 }
 
-#theme:hover, #lan:hover {
+#lan:hover {
 	background-color: var(--bg-color);
 }
 

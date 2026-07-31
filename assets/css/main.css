@@ -152,20 +152,12 @@ li > .active {
 	z-index: -999;
 }
 
-#options-toggler {
-	transition: .2s;
-}
-
-#options-toggler:hover {
-	transform: scale(1.09,1.09);
-}
-
 #theme {
 	height: 40px;
     width: 40px;
 
-	bottom: 85px !important;
-	right: 30px !important;
+	bottom: 25px !important;
+	right: 25px !important;
 
 	font-size: 1em;
 
@@ -175,23 +167,22 @@ li > .active {
 
 #lan {
 	height: 40px;
-    width: auto;
+	width: auto;
 	min-width: 40px;
 	padding: 0 14px;
 	border-radius: 20px;
 	line-height: 38px;
 
-	bottom: 130px;
-	right: 30px;
+	bottom: 75px;
+	right: 25px;
 
-	font-size: 1em;
+	font-size: 0.9em;
 
 	-webkit-transition: background-color .5s; /* For Safari 3.0 to 6.0 */
-    transition: background-color .5s; /* For modern browsers */
+	transition: background-color .5s; /* For modern browsers */
 }
 
 .lang-label {
-	font-size: 0.9em;
 	white-space: nowrap;
 }
 

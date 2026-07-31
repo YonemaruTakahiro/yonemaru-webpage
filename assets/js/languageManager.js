@@ -17,9 +17,12 @@ class LanguageManager {
     }
 
     localStorage.setItem("lan", languageCode);
-    const languageData = this.config.languages[languageCode];
 
-    $("#lan .lang-label").text(languageData.label);
+    // The button shows the language you would switch TO, not the current one
+    const nextIndex = (this.availableLanguages.indexOf(languageCode) + 1) % this.availableLanguages.length;
+    const nextLanguage = this.availableLanguages[nextIndex];
+    $("#lan .lang-label").text(this.config.languages[nextLanguage].label);
+
     $("body").attr("class", languageCode); // Usa la clase en el body para manejar estilos CSS
 
     this.updateLanguage();
