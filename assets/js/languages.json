@@ -2,10 +2,10 @@
     "default": "ja",
     "languages": {
         "ja": {
-            "flag": "https://flagcdn.com/w20/jp.png"
+            "label": "Japanese"
         },
         "en": {
-            "flag": "https://flagcdn.com/w20/us.png"
+            "label": "English"
         }
     }
 }
