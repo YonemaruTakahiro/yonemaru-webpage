@@ -251,13 +251,13 @@ $(document).ready(function(){
 			rel: 'stylesheet',
 			href: 'assets/css/dark.css'
 		});
-		$('#theme').empty().append("<i class='fa-duotone fa-lightbulb-slash'></i>");
+		$('#theme').empty().append("<i class='fa-solid fa-sun'></i>");
 	}
 
 	// Alternates between light and dark themes
 	$('#theme').click(function(e) {
 		if(localStorage.theme != "dark"){
-			$('#theme').empty().append("<i class='fa-duotone fa-lightbulb-slash'></i>");
+			$('#theme').empty().append("<i class='fa-solid fa-sun'></i>");
 
 			localStorage.theme = "dark"
 			
@@ -269,7 +269,7 @@ $(document).ready(function(){
 			});
 		}
 		else {
-			$('#theme').empty().append("<i class='fa-duotone fa-lightbulb'></i>");
+			$('#theme').empty().append("<i class='fa-solid fa-moon'></i>");
 
 			localStorage.theme = "light"
 			
