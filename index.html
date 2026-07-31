@@ -100,7 +100,10 @@
 						</div>
 					</div>
 
-					<h3 class="mb-2">米丸 嵩宏</h3>
+					<h3 class="mb-2"
+						data-ja="米丸 嵩宏"
+						data-en="Takahiro Yonemaru">
+					</h3>
 
 					<p class="mb-4">
 						<span class="t-secondary"
@@ -156,10 +159,25 @@
 								data-en="Research">
 							</h4>
 
-							<p class="mt-1"
-								data-ja="未定(決まり次第掲載します)。"
-								data-en="TBD (to be announced).">
+							<p class="mt-1 justify"
+								data-ja="模倣学習に基づくロボットマニピュレーションの研究を行っています。物体が散乱・密集した環境におけるピッキング作業の効率化・自動化を目指し、人間の実演からロボットの柔軟な操作戦略を獲得することに取り組んでいます。"
+								data-en="My research focuses on robotic manipulation based on imitation learning. Aiming at efficient and automated picking in cluttered and densely packed environments, I work on acquiring flexible manipulation strategies for robots from human demonstrations.">
 							</p>
+
+							<ul class="mt-1">
+								<li class="mb-1"
+									data-ja="<strong>複数物体の同時把持</strong> — 押し動作で散乱した物体を寄せ集め、複数の物体をまとめて把持・運搬する方策を拡散方策（Diffusion Policy）により学習"
+									data-en="<strong>Multi-object grasping</strong> — Learning diffusion policies that push and group scattered objects, then grasp and deliver multiple objects at once">
+								</li>
+								<li class="mb-1"
+									data-ja="<strong>実演データの拡張</strong> — 少数の物体で収集した実演から、多様な散乱シーンの学習データを合成し、失敗しやすい場面を重点的に学習"
+									data-en="<strong>Demonstration data augmentation</strong> — Synthesizing training data for diverse cluttered scenes from demonstrations collected in simple scenes, focusing on failure-prone situations">
+								</li>
+								<li class="mb-1"
+									data-ja="<strong>人間の把持戦略の獲得</strong> — 密集した小型部品のビンピッキングに向けて、押し引き・再把持・絡み解消といった人間の柔軟な把持戦略を模倣学習で獲得"
+									data-en="<strong>Learning human grasping strategies</strong> — Acquiring flexible human strategies such as pushing aside, re-grasping, and untangling for bin picking of densely packed small parts">
+								</li>
+							</ul>
 
 							<h4 id="newsH4" class="mt-2"
 								data-ja="ニュース"
@@ -188,8 +206,8 @@
 								data-en="(Harada Lab, April 2024 - present)"></div>
 
 							<p class="mt-1 justify"
-								data-ja="2024年4月4日に原田研究室に配属されました。研究テーマは未定です。"
-								data-en="Assigned to the Harada Lab on April 4, 2024. Research topic is yet to be determined.">
+								data-ja="2024年4月4日に原田研究室に配属されました。模倣学習に基づくロボットマニピュレーション、特に散乱・密集環境におけるピッキングの効率化・自動化について研究しています。"
+								data-en="Assigned to the Harada Lab on April 4, 2024. Researching robotic manipulation based on imitation learning, with a focus on efficient and automated picking in cluttered environments.">
 							</p>
 						</div>
 					</div>
@@ -207,9 +225,13 @@
 
 						<div class="row align-items-center mb-4 publication-item">
 							<div class="col-md-5 mb-3 mb-md-0">
-								<video class="w-100 rounded" controls muted loop playsinline>
-									<source src="assets/documents/videos/access2026.mp4" type="video/mp4">
-								</video>
+								<div class="ratio ratio-16x9 rounded overflow-hidden">
+									<iframe src="https://www.youtube.com/embed/t5rLCGbdZR0"
+										title="Learning to Selectively Push, Group, and Grasp for Multi-Object Delivery Using Diffusion Policies (video)"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen>
+									</iframe>
+								</div>
 							</div>
 							<div class="col-md-7">
 								<p class="mb-1"><strong>Learning to Selectively Push, Group, and Grasp for Multi-Object Delivery Using Diffusion Policies</strong></p>
@@ -218,8 +240,44 @@
 								<p class="mb-0">
 									<a href="https://ieeexplore.ieee.org/document/11574651" class="link-dark" target="_blank">[Paper]</a>
 									<a href="https://arxiv.org/abs/2502.08452" class="link-dark" target="_blank">[arXiv]</a>
+									<a href="https://www.youtube.com/watch?v=VOVsiJpSLRc" class="link-dark" target="_blank">[Video]</a>
 								</p>
 							</div>
+						</div>
+
+						<h4 class="mt-4 mb-3"
+							data-ja="国内会議"
+							data-en="Domestic Conferences">
+						</h4>
+
+						<div class="mb-3">
+							<p class="mb-1"
+								data-ja="<strong>密集物体のピッキングにおける人間の把持戦略の獲得</strong>"
+								data-en="<strong>Learning Human Grasping Strategies for Bin Picking</strong>">
+							</p>
+							<p class="mb-1"
+								data-ja="<u>米丸 嵩宏</u>, 山下 孔誠, 万 偉偉, 原田 研介"
+								data-en="<u>Takahiro Yonemaru</u>, Kosei Yamashita, Weiwei Wan, Kensuke Harada">
+							</p>
+							<p class="mb-0 t-secondary"
+								data-ja="ロボティクス・メカトロニクス講演会2026 (ROBOMECH2026), 1A2-U03, 2026"
+								data-en="The JSME Conference on Robotics and Mechatronics (ROBOMECH2026), 1A2-U03, 2026">
+							</p>
+						</div>
+
+						<div class="mb-3">
+							<p class="mb-1"
+								data-ja="<strong>模倣学習による複数物体のまとめ動作と同時把持戦略の獲得</strong>"
+								data-en="<strong>Learning to Group and Grasp Multiple Objects</strong>">
+							</p>
+							<p class="mb-1"
+								data-ja="<u>米丸 嵩宏</u>, 万 偉偉, 原田 研介"
+								data-en="<u>Takahiro Yonemaru</u>, Weiwei Wan, Kensuke Harada">
+							</p>
+							<p class="mb-0 t-secondary"
+								data-ja="ロボティクス・メカトロニクス講演会2025 (ROBOMECH2025), 2025"
+								data-en="The JSME Conference on Robotics and Mechatronics (ROBOMECH2025), 2025">
+							</p>
 						</div>
 
 					</div>
